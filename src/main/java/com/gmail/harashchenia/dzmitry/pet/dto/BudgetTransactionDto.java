@@ -4,12 +4,12 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-public class BudgetTransaction {
+public class BudgetTransactionDto {
     private UUID uuid;
     private LocalDateTime timeOfTransaction;
     private BigDecimal amount;
 
-    public BudgetTransaction(UUID uuid, LocalDateTime timeOfTransaction, BigDecimal amount) {
+    public BudgetTransactionDto(UUID uuid, LocalDateTime timeOfTransaction, BigDecimal amount) {
         this.uuid = uuid;
         this.timeOfTransaction = timeOfTransaction;
         this.amount = amount;

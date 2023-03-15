@@ -1,6 +1,6 @@
 package com.gmail.harashchenia.dzmitry.pet.controllers;
 
-import com.gmail.harashchenia.dzmitry.pet.dto.BudgetTransaction;
+import com.gmail.harashchenia.dzmitry.pet.dto.BudgetTransactionDto;
 import com.gmail.harashchenia.dzmitry.pet.service.api.ITransactionSetvice;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,7 +19,7 @@ public class PlannerController {
     }
 
     @GetMapping("operations/{id}")
-    public BudgetTransaction getTransactionById(@PathVariable (name = "id") UUID uuid){
+    public BudgetTransactionDto getTransactionById(@PathVariable (name = "id") UUID uuid){
        return service.getTransactionByUuid(uuid);
     }
 }

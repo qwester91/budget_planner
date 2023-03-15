@@ -1,10 +1,9 @@
 package com.gmail.harashchenia.dzmitry.pet.service.api;
 
-import com.gmail.harashchenia.dzmitry.pet.dto.BudgetTransaction;
-import jakarta.transaction.Transaction;
+import com.gmail.harashchenia.dzmitry.pet.dto.BudgetTransactionDto;
 
 import java.util.UUID;
 
 public interface ITransactionSetvice {
-    BudgetTransaction getTransactionByUuid(UUID uuid);
+    BudgetTransactionDto getTransactionByUuid(UUID uuid);
 }
